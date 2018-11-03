@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registrarse</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  style="background-color: gainsboro">
+    <div class="splash-bg"></div>
+    <div class="splash-logo"></div>
+  <form (submit)="doSignup()">
+    <ion-list style="padding-top: 50px">
+
+      <ion-item>
+        <ion-label fixed>Nombre1</ion-label>
+        <ion-input type="text" [(ngModel)]="account.name" name="name" required ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email" required ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password" required ></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block  class="regi">Registrarse</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>
